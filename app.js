@@ -16,7 +16,7 @@ module.exports.shorten = function(options){
 		  
 		  ///Required
 		  url: encodeURIComponent(options.url), //'google.es',
-		  _id: options._id,  //'2092a6e82ff58eee34780f29dc59d8f0d02f3e563b4ef7265781'
+		  _id: options._id,
 		  
 		  group: options.group,
 		  isNpmModule: true
