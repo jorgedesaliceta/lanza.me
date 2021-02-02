@@ -1,26 +1,29 @@
 {
-  "name": "shorten-with-lanza.me",
+  "name": "lanza.me",
   "version": "1.0.0",
-  "description": "Shorten URL with Lanza.me shortener",
+  "description": "Shorten URL with Lanza.me shortener & metashortener",
   "main": "app.js",
+  "dependencies": {
+    "shorten-with-lanza.me": "^1.0.0"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "npm tests.js"
+    "test": "npm test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jorgedesaliceta/shorten-with-lanza.me.git"
+    "url": "git+https://github.com/jorgedesaliceta/lanza.me.git"
   },
   "keywords": [
     "shorten",
-    "shortener"
+    "shortener",
+    "url",
+    "links"
   ],
   "author": "jorgedesaliceta",
-  "license": "UNLICENSED",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jorgedesaliceta/shorten-with-lanza.me/issues"
+    "url": "https://github.com/jorgedesaliceta/lanza.me/issues"
   },
-  "homepage": "https://github.com/jorgedesaliceta/shorten-with-lanza.me#readme",
-  "dependencies": {
-    "shorten-with-lanza.me": "^1.0.0"
-  }
+  "homepage": "https://github.com/jorgedesaliceta/lanza.me#readme"
 }
