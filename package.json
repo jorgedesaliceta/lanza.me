@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Shorten URL with Lanza.me shortener & metashortener",
   "main": "app.js",
-  "dependencies": {
-    "shorten-with-lanza.me": "^1.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "test": "npm test"

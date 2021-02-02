@@ -1,9 +1,9 @@
 # lanza.me
 
 Shorten URLs using [Lanza.me](https://lanza.me/ "Lanza.me shortener & metashortener")
- shortener.
+ shortener in Node.js with 0 dependencies.
 
-Install with "npm i shorten-with-lanza.me". Zero dependencies.
+Install with "npm i shorten-with-lanza.me".
 
 ```javascript
 var lanzame = require('shorten-with-lanza.me')
