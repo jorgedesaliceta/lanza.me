@@ -1,4 +1,4 @@
-var lanzame = require('shorten-with-lanza.me')
+var lanzame = require('lanzame')
 
 lanzame.shorten({_id: '1234567890', url: 'google.es'}).then(function(json){
 	

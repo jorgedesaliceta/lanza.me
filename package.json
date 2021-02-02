@@ -1,5 +1,5 @@
 {
-  "name": "lanza.me",
+  "name": "lanzame",
   "version": "1.0.0",
   "description": "Shorten URL with Lanza.me shortener & metashortener",
   "main": "app.js",

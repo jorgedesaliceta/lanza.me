@@ -1,21 +1,16 @@
-
-//lanza.me-node-module.js
-
-const https  = require('https');
-//const config = require();
+const https = require('https');
 
 module.exports.shorten = function(options){
 	
 	return new Promise(function(resolve, reject){
 		
-		if(!options && options.url){
-			
+		if(!options || options.url || options._id){
+			reject('options are missing')
 		}
 		
 		const data = JSON.stringify({
-		  
-		  ///Required
-		  url: encodeURIComponent(options.url), //'google.es',
+		  		  
+		  url: encodeURIComponent(options.url),
 		  _id: options._id, //secret
 		  
 		  group: options.group,
@@ -36,17 +31,15 @@ module.exports.shorten = function(options){
 		const req = https.request(reqOptions, res => {
 			//console.log(`statusCode: ${res.statusCode}`)
 			res.on('data', d => {
-				//process.stdout.write(d) //console.log(d) sale buffer
-				resolve(JSON.parse(d));
+				resolve(JSON.parse(d))
 			})
 		})
 
-		req.on('error', error => { //console.error(error)
+		req.on('error', error => {
 			reject(error)
 		})
 
-		req.write(data); //creo que es el envío
-		req.end();
-		//console.log('result: ', result); //undefined
+		req.write(data)
+		req.end()
 	})
 }

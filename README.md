@@ -3,10 +3,10 @@
 Shorten URLs using [Lanza.me](https://lanza.me/ "Lanza.me shortener & metashortener")
  shortener in Node.js with 0 dependencies.
 
-Install with "npm i shorten-with-lanza.me".
+Install with "npm i lanzame".
 
 ```javascript
-var lanzame = require('shorten-with-lanza.me')
+var lanzame = require('lanzame')
 
 lanzame.shorten({_id: '1234567890', url: 'google.es'}).then(function(json){
 	
